@@ -1,24 +1,9 @@
-# README
+# Pexels API Practice Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is a learning project for the Odin Project's [Ruby on Rails pexels API lesson](https://www.theodinproject.com/lessons/ruby-on-rails-pexels-api)
 
-Things you may want to cover:
+## Goals
+The main goals of this project was to familiarize myself with the use of API keys, practice managing secrets within a ruby app and use Figaro gem.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Result
+The index page can take the input of a [pexels](https://www.pexels.com/) media collection ID, and display all the photos of the collection.
