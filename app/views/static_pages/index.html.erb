@@ -1,0 +1,19 @@
+
+<%= form_with url: root_path, method: :get do |f| %>
+<%= f.label :collection_id, "collection id" %>
+<%= f.text_field :collection_id %><br>
+<%= f.submit "find collection" %>
+<% end %>
+<a href="https://www.pexels.com">Photos provided by Pexels</a>
+
+<% if @photos.present? %>
+<p> displaying all photos for collection ID <%= params[:collection_id] %>.</p>
+    <% @photos.each do |photo| %>
+        <div>
+        <img src="<%= photo.src['medium'] %>">
+        </div>
+    <% end %>
+    <% elsif params[:collection_id].present? %>
+    <p> could not find photos for collection ID <%= params[:collection_id] %>.</p>
+
+<% end %>
